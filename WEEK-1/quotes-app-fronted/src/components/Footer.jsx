@@ -5,7 +5,7 @@ import { faFacebook, faGithub, faLinkedin, faInstagram, faYoutube } from '@forta
 function Footer() {
   return (
     <>
-      <div className='max-w-screen mx-auto fixed bottom-0 right-0 left-0 bg-yellow-100 py-2 '>
+      <div className='max-w-screen mx-auto md:fixed md:bottom-0 md:right-0 md:left-0 bg-yellow-100 py-2 '>
         <div className='container' >
           <p className='text-center font-semibold text-xl'>Follow Us On</p>
           <ul className='text-2xl flex space-x-4 py-2 text-teal-800 text-center justify-center'>
