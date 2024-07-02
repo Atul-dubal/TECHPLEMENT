@@ -10,6 +10,7 @@ function Logout() {
         try {
             localStorage.removeItem('UserData')
             localStorage.removeItem('isLogin')
+            window.location.replace('/login')
         } catch (e) {
 
         }
