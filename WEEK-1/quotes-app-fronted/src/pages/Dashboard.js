@@ -52,7 +52,7 @@ function Dashboard() {
   }, [SearchQuery]);
   return (
     <>
-      <div className=' max-w-screen mx-auto'>
+      <div className=' max-w-screen mx-auto mb-20'>
         <div className=' container flex flex-col justify-center items-center'>
           {/* Search By Author Name Section */}
           <div className=' w-[100%] my-3 py-3 flex justify-center items-center' >
