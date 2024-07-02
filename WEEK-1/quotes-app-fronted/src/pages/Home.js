@@ -12,7 +12,7 @@ function Home() {
                             <p className='px-10'> Your daily source of motivation and wisdom! Each day, we bring you a selection of inspiring quotes from renowned figures and contemporary voices. Whether you need a boost of encouragement, a moment of reflection, or a spark of creativity.</p>
                             <a href='/login'>  <button className='bg-blue-500 w-[200px] px-2 py-2 '>Get Quotes</button></a>
                         </div>
-                        <div className=' order-1 md:order-2 flex justify-center items-center w-[300px] h-[300px]'>
+                        <div className=' order-1 md:order-2 flex justify-center items-center w-[300px] h-[300px] md:w-[400px] md:h-[350px]'>
                             <img src='/images/technology_boy.jpg' className=' rounded-xl' alt=''></img>
                         </div>
                     </div>
