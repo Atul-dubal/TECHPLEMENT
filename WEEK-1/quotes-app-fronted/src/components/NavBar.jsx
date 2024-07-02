@@ -11,7 +11,7 @@ function NavBar() {
   })
   return (
     <>
-      <div className=' max-w-screen   py-3 bg-yellow-100 mx-auto '>
+      <div className=' max-w-screen  mb-16  py-3 bg-yellow-100 mx-auto '>
         <div className=' container  flex  justify-around items-center'>
           <div className=''>
             <Link to='/' >  <h1 className='font-bold text-center md:text-left text-xl lg:text-3xl'>Quotes Of The Day</h1></Link>
