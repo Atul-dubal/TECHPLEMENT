@@ -48,9 +48,9 @@ function Register() {
   }
   return (
     <>
-      <div className=' max-w-screen mx-auto'>
+      <div className=' max-w-screen mx-auto my-16'>
         <div className='container '>
-          <div className='flex my-16 flex-col justify-center items-center w-[100%]'>
+          <div className='flex  flex-col justify-center items-center w-[100%]'>
             <form className='flex bg-slate-50 flex-col space-y-3 shadow-md p-4 w-[80%] md:w-[40%] ' onSubmit={formSubmit} action='' method=''>
 
               <h1 className='font-bold text-3xl text-center'>Register</h1>
