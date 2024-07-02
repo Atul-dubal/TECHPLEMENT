@@ -2,6 +2,7 @@ require("dotenv").config()
 const UserModel = require("../db/model/userModel")
 
 const UserSignUp = async (req, res) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
     // const { email, password } = req.body
     console.log(req.body);
     try {
@@ -19,7 +20,7 @@ const UserSignUp = async (req, res) => {
 }
 
 const UserSignIn = async (req, res) => {
-
+    res.setHeader('Access-Control-Allow-Origin', '*');
     try {
         const { email, password } = req.body.formData
         const data = await UserModel.find({ email, password })

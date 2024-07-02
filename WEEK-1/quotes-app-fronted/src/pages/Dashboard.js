@@ -26,12 +26,12 @@ function Dashboard() {
         navigator('/login')
       }
       if (SearchQuery.length <= 0) {
-        const data = await axios.get('http://localhost:2206/api/quotes')
+        const data = await axios.get(`${process.env.REACT_APP_API_BASE_URL}api/quotes`)
         console.log("Random Quotes : ", data.data)
         setAPIDATA(data.data)
         // console.log(APIDATA)
       } else {
-        const data = await axios.get(`http://localhost:2206/api/quotes/author/${SearchQuery}`)
+        const data = await axios.get(`${process.env.REACT_APP_API_BASE_URL}api/quotes/author/${SearchQuery}`)
         console.log("Search Quotes By Author Name : ", data.data)
         setSearchQueryResult(data.data)
         console.log(SearchQueryResult)

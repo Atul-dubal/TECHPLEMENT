@@ -19,7 +19,7 @@ function Login() {
     e.preventDefault()
     console.log(formData)
     try {
-      const result = await axios.post("http://localhost:2206/auth/signin", {
+      const result = await axios.post(`${process.env.REACT_APP_API_BASE_URL}auth/signin`, {
         formData
       })
       if(result.data.StatusCode === 200){

@@ -1,9 +1,11 @@
+
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-
+// dotenv.config()
 function Register() {
+  console.log(process.env.REACT_APP_API_BASE_URL)
   const [formData, setFormData] = useState({
     name: '',
     phone: "",
@@ -23,7 +25,7 @@ function Register() {
     e.preventDefault()
     console.log(formData)
     try {
-      const result = await axios.post('http://localhost:2206/auth/signup', { formData })
+      const result = await axios.post(`${process.env.REACT_APP_API_BASE_URL}auth/signup`, { formData })
       console.log(result)
       if (result.data.StatusCode === 200) {
         alert(result.data.msg)

@@ -2,6 +2,7 @@
 
 # dependencies
 /quotes-app-api/node_modules
+/quotes-app-api/data.json
 /quotes-app-fronted/node_modules
 /.pnp
 .pnp.js

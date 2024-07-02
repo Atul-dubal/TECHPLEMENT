@@ -12,6 +12,7 @@ app.use(cors())
 app.use(express.json());
 // HOME ROUTE
 app.get('/',(req,res)=>{
+    res.setHeader('Access-Control-Allow-Origin', '*');
     res.json({msg:"Welcome To Techplement Quotes API"})
 })
 
