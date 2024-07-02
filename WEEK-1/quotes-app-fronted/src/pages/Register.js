@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 
 // dotenv.config()
 function Register() {
-  console.log(process.env.REACT_APP_API_BASE_URL)
+  // console.log(process.env.REACT_APP_API_BASE_URL)
   const [formData, setFormData] = useState({
     name: '',
     phone: "",
@@ -23,10 +23,10 @@ function Register() {
 
   const formSubmit = async (e) => {
     e.preventDefault()
-    console.log(formData)
+    // console.log(formData)
     try {
       const result = await axios.post(`${process.env.REACT_APP_API_BASE_URL}auth/signup`, { formData })
-      console.log(result)
+      // console.log(result)
       if (result.data.StatusCode === 200) {
         alert(result.data.msg)
         navigator('/login')

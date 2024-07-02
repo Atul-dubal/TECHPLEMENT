@@ -5,14 +5,14 @@ function Home() {
         <>
             <div className=' max-w-screen mx-auto my-5'>
                 <div className='container '>
-                    <div className='flex flex-col justify-center  my-5 space-x-3 md:flex-row '>
+                    <div className='flex flex-col justify-center items-center my-5 space-x-3 md:flex-row '>
                         <div className='space-y-2 w-[100%] md:w-[50%] flex flex-col items-center order-2 md:order-1'>
                             <h1 className='font-bold text-center text-2xl lg:text-3xl mt-20'>Quotes Of The Day</h1>
                             <p>Get Various Quotes Of Famous Authors.</p>
-                            <p> Your daily source of motivation and wisdom! Each day, we bring you a selection of inspiring quotes from renowned figures and contemporary voices. Whether you need a boost of encouragement, a moment of reflection, or a spark of creativity.</p>
+                            <p className='px-10'> Your daily source of motivation and wisdom! Each day, we bring you a selection of inspiring quotes from renowned figures and contemporary voices. Whether you need a boost of encouragement, a moment of reflection, or a spark of creativity.</p>
                             <a href='/login'>  <button className='bg-blue-500 w-[200px] px-2 py-2 '>Get Quotes</button></a>
                         </div>
-                        <div className=' order-1 md:order-2 flex justify-center items-center w-[400px] h-[350px]'>
+                        <div className=' order-1 md:order-2 flex justify-center items-center w-[350px] h-[350px]'>
                             <img src='/images/technology_boy.jpg' className=' rounded-xl' alt=''></img>
                         </div>
                     </div>
