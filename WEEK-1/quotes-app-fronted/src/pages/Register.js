@@ -64,7 +64,7 @@ function Register() {
               <input className='p-1' type='text' placeholder='Password' value={formData.password} onChange={InputChangeHandler} name='password' style={{ 'border': '2px solid black' }} required ></input>
 
               <br />
-              <input type='submit' value='Register' name='submit' className='p-2 bg-blue-700 mx-16 my-5 cursor-pointer text-xl text-white shadow-md hover:bg-blue-300' />
+              <input type='submit' value='Register' name='submit' className='p-2 bg-blue-700 mx-16 my-2 cursor-pointer text-xl text-white shadow-md hover:bg-blue-300' />
 
               <a href='/login' ><p className='font-semibold text-center'>I Already Have An Account <span className='text-blue-500 font-bold cursor-pointer'> Login</span></p></a>
             </form>
